@@ -135,12 +135,12 @@ public abstract class Character extends GameObject {
                 y=lastStickyY;
                 break;
             case 1:
-                curLoc=curLoc.Left;
+                if(curLoc.Left!=null)curLoc=curLoc.Left;
                 curLoc.start();
                 x=gameSurface.getWidth();
                 break;
             case 2:
-                curLoc=curLoc.Right;
+                if(curLoc.Right!=null)curLoc=curLoc.Right;
                 curLoc.start();
                 x=x-gameSurface.getWidth();
                 break;
@@ -266,7 +266,7 @@ public abstract class Character extends GameObject {
     public int isOutOfSurface(){
         if(x<0-getWidth())return 1;
         if(x>gameSurface.getWidth())return 2;
-        if(y>gameSurface.getHeight())return 3;
+        if(y>gameSurface.getHeight())return 0;
         if(y<0-getHeight())return 4;
         return -1;
     }

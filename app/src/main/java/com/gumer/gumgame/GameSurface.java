@@ -93,7 +93,7 @@ public class GameSurface extends SurfaceView implements SurfaceHolder.Callback {
         });
 
         // Load the sound background.mp3 into SoundPool
-        this.soundIdBackground= this.soundPool.load(this.getContext(), R.raw.ponos,1);
+        this.soundIdBackground= this.soundPool.load(this.getContext(), R.raw.jrj,1);
 
         // Load the sound explosion.wav into SoundPool
         this.soundIdExplosion = this.soundPool.load(this.getContext(), R.raw.explosion,1);

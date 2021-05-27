@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/dark_marble"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="329dp"
+        android:layout_height="214dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="GUMGAME"
+        android:textAllCaps="false"
+        android:textColor="#18FFC9"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="197dp"
+        android:layout_height="89dp"
+        android:layout_gravity="center"
+        android:text="Новая игра" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="203dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:text="Загрузить игру" />
+</LinearLayout>
